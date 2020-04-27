@@ -5,13 +5,13 @@
 #include <iomanip>
 #include <stdio.h>
 float num[1000];
-float numcreate()//Ëæ»úÊıÉú³É
+float numcreate()//éšæœºæ•°ç”Ÿæˆ
 {
 	std::random_device rd;
 	return rd();
 }
 
-float numcreate2(int shuliang,int nummax)//¿ØÖÆËæ»úÊı´óĞ¡
+float numcreate2(int shuliang,int nummax)//æ§åˆ¶éšæœºæ•°å¤§å°
 {
 	int i;
 	for (i = 0; i < shuliang ;i++)
@@ -34,7 +34,7 @@ float numcreate2(int shuliang,int nummax)//¿ØÖÆËæ»úÊı´óĞ¡
 	return 0;
 }
 
-float print1(int shuliang, int point,int fuhao)//´òÓ¡ÎŞÀ¨ºÅµÄËÄÔòÔËËã
+float print1(int shuliang, int point,int fuhao)//æ‰“å°æ— æ‹¬å·çš„å››åˆ™è¿ç®—
 {
 	int i;
 	if (fuhao == 1)
@@ -50,7 +50,7 @@ float print1(int shuliang, int point,int fuhao)//´òÓ¡ÎŞÀ¨ºÅµÄËÄÔòÔËËã
 				}
 				else if (i % 3 == 0)
 				{
-					std::cout << "¡Â";
+					std::cout << "Ã·";
 				}
 				else if (i % 7 == 0)
 				{
@@ -75,7 +75,7 @@ float print1(int shuliang, int point,int fuhao)//´òÓ¡ÎŞÀ¨ºÅµÄËÄÔòÔËËã
 				}
 				else
 				{
-					std::cout << "¡Â";
+					std::cout << "Ã·";
 				}
 
 				printf("%.0f +%.0f=""\n", num[i + 2], num[i + 3]);
@@ -89,7 +89,7 @@ float print1(int shuliang, int point,int fuhao)//´òÓ¡ÎŞÀ¨ºÅµÄËÄÔòÔËËã
 				}
 				else if (i % 3 == 0)
 				{
-					std::cout << "¡Â";
+					std::cout << "Ã·";
 				}
 				else if (i % 7 == 0)
 				{
@@ -114,7 +114,7 @@ float print1(int shuliang, int point,int fuhao)//´òÓ¡ÎŞÀ¨ºÅµÄËÄÔòÔËËã
 				}
 				else
 				{
-					std::cout << "¡Â";
+					std::cout << "Ã·";
 				}
 
 				printf("%.2f +%.2f=""\n", num[i + 2], num[i + 3]);
@@ -212,7 +212,7 @@ float print1(int shuliang, int point,int fuhao)//´òÓ¡ÎŞÀ¨ºÅµÄËÄÔòÔËËã
 
 	return 0;
 }
-float print2(int shuliang, int point, int fuhao)//´òÓ¡ÓĞÀ¨ºÅµÄËÄÔòÔËËã
+float print2(int shuliang, int point, int fuhao)//æ‰“å°æœ‰æ‹¬å·çš„å››åˆ™è¿ç®—
 {
 	int i;
 	if (fuhao == 1)
@@ -228,7 +228,7 @@ float print2(int shuliang, int point, int fuhao)//´òÓ¡ÓĞÀ¨ºÅµÄËÄÔòÔËËã
 				}
 				else if (i % 3 == 0)
 				{
-					std::cout << "¡Â";
+					std::cout << "Ã·";
 				}
 				else if (i % 7 == 0)
 				{
@@ -253,7 +253,7 @@ float print2(int shuliang, int point, int fuhao)//´òÓ¡ÓĞÀ¨ºÅµÄËÄÔòÔËËã
 				}
 				else
 				{
-					std::cout << "¡Â";
+					std::cout << "Ã·";
 				}
 
 				printf("%.0f) +%.0f=""\n", num[i + 2], num[i + 3]);
@@ -267,7 +267,7 @@ float print2(int shuliang, int point, int fuhao)//´òÓ¡ÓĞÀ¨ºÅµÄËÄÔòÔËËã
 				}
 				else if (i % 3 == 0)
 				{
-					std::cout << "¡Â";
+					std::cout << "Ã·";
 				}
 				else if (i % 7 == 0)
 				{
@@ -277,7 +277,7 @@ float print2(int shuliang, int point, int fuhao)//´òÓ¡ÓĞÀ¨ºÅµÄËÄÔòÔËËã
 				{
 					std::cout << "+";
 				}
-				printf("£¨%.2f", num[i + 1]);
+				printf("ï¼ˆ%.2f", num[i + 1]);
 				if (i % 6 == 0)
 				{
 					std::cout << "+";
@@ -292,10 +292,10 @@ float print2(int shuliang, int point, int fuhao)//´òÓ¡ÓĞÀ¨ºÅµÄËÄÔòÔËËã
 				}
 				else
 				{
-					std::cout << "¡Â";
+					std::cout << "Ã·";
 				}
 
-				printf("%.2f£© +%.2f=""\n", num[i + 2], num[i + 3]);
+				printf("%.2fï¼‰ +%.2f=""\n", num[i + 2], num[i + 3]);
 
 			}
 
@@ -363,7 +363,7 @@ float print2(int shuliang, int point, int fuhao)//´òÓ¡ÓĞÀ¨ºÅµÄËÄÔòÔËËã
 				{
 					std::cout << "+";
 				}
-				printf("£¨%.2f", num[i + 1]);
+				printf("ï¼ˆ%.2f", num[i + 1]);
 				if (i % 6 == 0)
 				{
 					std::cout << "+";
@@ -381,7 +381,7 @@ float print2(int shuliang, int point, int fuhao)//´òÓ¡ÓĞÀ¨ºÅµÄËÄÔòÔËËã
 					std::cout << "-";
 				}
 
-				printf("%.2f£© +%.2f=""\n", num[i + 2], num[i + 3]);
+				printf("%.2fï¼‰ +%.2f=""\n", num[i + 2], num[i + 3]);
 
 			}
 
@@ -390,7 +390,7 @@ float print2(int shuliang, int point, int fuhao)//´òÓ¡ÓĞÀ¨ºÅµÄËÄÔòÔËËã
 
 	return 0;
 }
-float fileprint1(int shuliang, int point, int fuhao)//´òÓ¡ÎªTXTÎÄ¼ş
+float fileprint1(int shuliang, int point, int fuhao)//æ‰“å°ä¸ºTXTæ–‡ä»¶
 {
 	int i;
 	FILE *fp;
@@ -408,7 +408,7 @@ float fileprint1(int shuliang, int point, int fuhao)//´òÓ¡ÎªTXTÎÄ¼ş
 				}
 				else if (i % 3 == 0)
 				{
-					fprintf(fp,"%s", "¡Â");
+					fprintf(fp,"%s", "Ã·");
 				}
 				else if (i % 7 == 0)
 				{
@@ -433,7 +433,7 @@ float fileprint1(int shuliang, int point, int fuhao)//´òÓ¡ÎªTXTÎÄ¼ş
 				}
 				else
 				{
-					fprintf(fp, "%s","¡Â");
+					fprintf(fp, "%s","Ã·");
 				}
 
 				fprintf(fp,"%.0f +%.0f=""\n", num[i + 2], num[i + 3]);
@@ -447,7 +447,7 @@ float fileprint1(int shuliang, int point, int fuhao)//´òÓ¡ÎªTXTÎÄ¼ş
 				}
 				else if (i % 3 == 0)
 				{
-					fprintf(fp,"%s", "¡Â");
+					fprintf(fp,"%s", "Ã·");
 				}
 				else if (i % 7 == 0)
 				{
@@ -472,7 +472,7 @@ float fileprint1(int shuliang, int point, int fuhao)//´òÓ¡ÎªTXTÎÄ¼ş
 				}
 				else
 				{
-					fprintf(fp,"%s", "¡Â");
+					fprintf(fp,"%s", "Ã·");
 				}
 
 				fprintf(fp,"%.2f +%.2f=""\n", num[i + 2], num[i + 3]);
@@ -570,7 +570,7 @@ float fileprint1(int shuliang, int point, int fuhao)//´òÓ¡ÎªTXTÎÄ¼ş
 	fclose(fp);
 	return 0;
 }
-float fileprint2(int shuliang, int point, int fuhao)//´òÓ¡ÎªTXTÎÄ¼ş
+float fileprint2(int shuliang, int point, int fuhao)//æ‰“å°ä¸ºTXTæ–‡ä»¶
 {
 	int i;
 	FILE *fp;
@@ -588,7 +588,7 @@ float fileprint2(int shuliang, int point, int fuhao)//´òÓ¡ÎªTXTÎÄ¼ş
 				}
 				else if (i % 3 == 0)
 				{
-					fprintf(fp,"%s", "¡Â");
+					fprintf(fp,"%s", "Ã·");
 				}
 				else if (i % 7 == 0)
 				{
@@ -613,7 +613,7 @@ float fileprint2(int shuliang, int point, int fuhao)//´òÓ¡ÎªTXTÎÄ¼ş
 				}
 				else
 				{
-					fprintf(fp,"%s", "¡Â");
+					fprintf(fp,"%s", "Ã·");
 				}
 
 				fprintf(fp, "%.0f) +%.0f=""\n", num[i + 2], num[i + 3]);
@@ -627,7 +627,7 @@ float fileprint2(int shuliang, int point, int fuhao)//´òÓ¡ÎªTXTÎÄ¼ş
 				}
 				else if (i % 3 == 0)
 				{
-					fprintf(fp,"%s", "¡Â");
+					fprintf(fp,"%s", "Ã·");
 				}
 				else if (i % 7 == 0)
 				{
@@ -652,7 +652,7 @@ float fileprint2(int shuliang, int point, int fuhao)//´òÓ¡ÎªTXTÎÄ¼ş
 				}
 				else
 				{
-					fprintf(fp,"%s", "¡Â");
+					fprintf(fp,"%s", "Ã·");
 				}
 
 				fprintf(fp, "%.2f) +%.2f=""\n", num[i + 2], num[i + 3]);
@@ -759,17 +759,17 @@ int main()
 	int kuohao=0;
 	int place=0;
 	int fuhao=0;
-	std::cout << "ÇëÊäÈë³öÌâÊıÁ¿¡£\n";
+	std::cout << "è¯·è¾“å…¥å‡ºé¢˜æ•°é‡ã€‚\n";
 	std::cin >> shuliang;
-	std::cout << "ÇëÊäÈë×î´óÖµ¡£\n";
+	std::cout << "è¯·è¾“å…¥æœ€å¤§å€¼ã€‚\n";
 	std::cin >> nummax;
-	std::cout << "ÊÇ·ñÓĞÀ¨ºÅµÄÔËËã£¬ÊÇÇëÊäÈë1£¬·ñÊäÈë2.\n";
+	std::cout << "æ˜¯å¦æœ‰æ‹¬å·çš„è¿ç®—ï¼Œæ˜¯è¯·è¾“å…¥1ï¼Œå¦è¾“å…¥2.\n";
 	std::cin >> kuohao;
-	std::cout << "ÊÇ·ñ´øĞ¡ÊıµÄÔËËã£¬·ñÇëÊäÈë1£¬ÊÇÊäÈë2.\n";
+	std::cout << "æ˜¯å¦å¸¦å°æ•°çš„è¿ç®—ï¼Œå¦è¯·è¾“å…¥1ï¼Œæ˜¯è¾“å…¥2.\n";
 	std::cin >> point;
-	std::cout << "ÇëÊäÈëÔËËãÀàĞÍ£¬1¼Ó¼õ³Ë³ı£¬2¼Ó¼õ\n";
+	std::cout << "è¯·è¾“å…¥è¿ç®—ç±»å‹ï¼Œ1åŠ å‡ä¹˜é™¤ï¼Œ2åŠ å‡\n";
 	std::cin >> fuhao;
-	std::cout << "´òÓ¡ÎªTXTÎÄ¼ş£¿ÊÇÊäÈë1\n";
+	std::cout << "æ‰“å°ä¸ºTXTæ–‡ä»¶ï¼Ÿæ˜¯è¾“å…¥1\n";
 	std::cin >> place;
 	numcreate2(shuliang*4,nummax);
 	if(kuohao==2)
