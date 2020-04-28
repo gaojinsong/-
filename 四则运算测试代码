@@ -1,0 +1,61 @@
+#include "pch.cpp"
+#include"pch.h"
+#include "CppUnitTest.h"
+
+
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+namespace UnitTest1
+{
+	TEST_CLASS(UnitTest1)
+	{
+	public:
+		
+		TEST_METHOD(TestMethod1)
+		{
+			ceshi A;
+			int shuliang = 17;
+			int nummax = 20;
+			int kuohao = 1;
+			int point = 1;
+			int fuhao = 1;
+			int place = 1;
+			Assert::AreEqual(1, A.fileprint1(shuliang,point,fuhao));
+
+			TEST_METHOD(TestMethod2)
+			{
+				ceshi A;
+				int shuliang = 25;
+				int nummax = 20;
+				int kuohao = 2;
+				int point = 1;
+				int fuhao = 1;
+				int place = 1;
+				Assert::AreEqual(1, A.fileprint2(shuliang,point,fuhao));
+			}
+			TEST_METHOD(TestMethod3)
+			{
+				ceshi A;
+				int shuliang = 20;
+				int nummax = 20;
+				int kuohao = 1;
+				int point = 2;
+				int fuhao = 1;
+				int place = 1;
+				Assert::AreEqual(1, A.print2(shuliang, point, fuhao));
+			}
+		}
+		TEST_METHOD(TestMethod4)
+		{
+			ceshi A;
+			int shuliang = 10;
+			int nummax = 20;
+			int kuohao = 1;
+			int point = 1;
+			int fuhao = 2;
+			int place = 1;
+			Assert::AreEqual(1, A.print2(shuliang, point, fuhao));
+		}
+	};
+}
